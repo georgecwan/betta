@@ -2,7 +2,7 @@ function showBlacklist() {
     chrome.storage.sync.get(['blacklist'], function(result){
         if (result.blacklist.length > 0) {
             for (var link in result.blacklist) {
-                document.getElementById('sitelist').innerHTML += '<div class="link">' + result.blacklist[link] + '</div>';
+                document.getElementById('sitelist').innerHTML += '<div class="link">' + result.blacklist[link] + '<i class="material-icons w3-large">delete</i></div>';
             }
         }
         else {

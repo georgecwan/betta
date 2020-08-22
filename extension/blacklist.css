@@ -1,8 +1,32 @@
 html {
     min-width: 250px;
+    margin: 5px
 }
 
 header {
-    font-size: 15px;
+    font-size: 18px;
     padding-bottom: 5px;
+}
+
+body {
+    margin-bottom: 5px;
+}
+
+#sitelist {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#sitelist > .link {
+    font-size: 14px;
+}
+
+.material-icons {
+    color: black;
+    cursor: pointer;
+}
+
+.material-icons:hover {
+    color: red;
 }
