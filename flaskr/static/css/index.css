@@ -226,7 +226,7 @@ h1 {
   white-space: nowrap;
 }
 
-#arrow01 a, #arrow02 a {
+#arrow01 a, #arrow02 a, #arrow03 a {
   padding-top: 60px;
 }
 
@@ -262,6 +262,22 @@ h1 {
   box-sizing: border-box;
 }
 
+#arrow03 a span {
+  position: absolute;
+  bottom: calc(-200% + 80px);
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-animation: sdb03 2s infinite;
+  animation: sdb03 2s infinite;
+  box-sizing: border-box;
+}
+
 @-webkit-keyframes sdb04 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -282,6 +298,31 @@ h1 {
   }
   40% {
     transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+/* upwards arrow */
+
+@-webkit-keyframes sdb03 {
+  0% {
+    -webkit-transform: rotate(135deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(135deg) translate(10px, -10px);
+  }
+  40% {
+    -webkit-transform: rotate(135deg) translate(0, 0);
+  }
+}
+@keyframes sdb03 {
+  0% {
+    transform: rotate(135deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(135deg) translate(10px, -10px);
+  }
+  40% {
+    transform: rotate(135deg) translate(0, 0);
   }
 }
 
