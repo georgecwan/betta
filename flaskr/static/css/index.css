@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -20,6 +22,7 @@
   color: #ffffff;
   display: block;
   transition: 0.3s;
+  font-family: 'Exo', sans-serif;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -140,4 +143,21 @@ body {
 
 button:focus {
   outline: 0;
+}
+
+.logo {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  padding: 10px;
+}
+
+h1 {
+  position: fixed;
+  font-family: 'Exo', sans-serif;
+  color: white;
+  left: 60px;
+  padding: 15px 10px;
+  margin: 0;
 }
