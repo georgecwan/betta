@@ -16,8 +16,17 @@ chrome.runtime.onMessage.addListener(function(request) {
                     alert(webPage + " added to blacklist.")
                     alert("Blacklist:\n" + newList.join("\n"))
                 })
-            } else {
-                alert("Already in blacklist.")
+            }
+            else {
+                for(var i=0; i<newList.length; i++){
+                    if(newList[i] == webPage){
+                        newList.splice(i, 1)
+                    }
+                }
+                chrome.storage.sync.set({'blacklist': newList}, function () {
+                    alert(webPage + " removed from blacklist.")
+                    alert("Blacklist:\n" + newList.join("\n"))
+                })
             }
         })
     }
