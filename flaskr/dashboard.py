@@ -18,3 +18,10 @@ def index():
 def about():
     return render_template("about.html")
 
+
+@bp.route("/team")
+def team():
+    return render_template("team.html")
+
+
+

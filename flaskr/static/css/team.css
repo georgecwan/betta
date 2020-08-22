@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400");
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap%27');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+}
+body{
+    margin-top: 150px;
+    scroll-behavior:smooth;
+    min-height: 100vh;
+    align-items: center;
+    background-image: linear-gradient(#cae6f6, #377ba8);
+}
+.team-section{
+    margin-top: 25px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+.team-section h1{
+    color: #545454;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+.ps{
+    margin-bottom: 5px;
+    display: inline-flex;
+
+}
+
+.ps img{
+    height:200px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.section{
+    width: 100%;
+    margin: auto;
+    color: #545454;
+}
+
+.name{
+    display: inline-flex;
+    text-align: center;
+    font-size: 25px;
+    color: #545454;
+}
+
