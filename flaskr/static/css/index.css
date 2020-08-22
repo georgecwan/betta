@@ -284,3 +284,50 @@ h1 {
     transform: rotate(-45deg) translate(0, 0);
   }
 }
+
+/* css for the "about" section */
+
+.about-section {
+    box-sizing: border-box;
+    background-size: 100%;
+}
+.inner-container {
+    width: 40%;
+    height: 50%;
+    float: right;
+    background-color: #cae6f6;
+    padding: 50px;
+    margin-right: calc(30% - 300px);
+    border-radius: 3%;
+    position: absolute;
+    right: 50px;
+}
+.inner-container h1 {
+    font-size: 45px;
+    font-weight:900;
+    color: #545454;
+    position: relative;
+    top: 5%;
+}
+.inner-container .border {
+    display: block;
+    margin-left: 0px;
+    width: 300px;
+    background: #545454;
+    margin-bottom: 35px;
+    margin-top: 7px;
+}
+.text {
+    font-size: 25px;
+    color: #545454;
+    text-align: justify;
+    margin: 0;
+    position: absolute;
+    font-family: 'Exo', sans-serif;
+}
+
+.betta-image {
+  position: absolute;
+  margin-left: calc(30% - 300px);
+  height: 90%;
+}
