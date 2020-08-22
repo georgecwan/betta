@@ -144,6 +144,7 @@ body {
 html, body {
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 button:focus {
@@ -192,4 +193,18 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.container {
+  /* uncomment below for scroll snap */
+  /*overflow-y: scroll;*/
+  scroll-snap-type: y mandatory;
+  height: 100%;
+}
+
+.child {
+  scroll-snap-align: start;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
