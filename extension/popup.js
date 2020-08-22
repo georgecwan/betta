@@ -1,16 +1,16 @@
-// window.onload = function () {
-//     document.getElementByID('addURL').onclick = function(){
-//         chrome.storage.sync.set({'newURL': window.location.origin}, function(){
-//         window.alert('URL added: ' + window.location.origin);
-//         console.log('URL added: ' + window.location.origin)
-//         })
-//     }
-// }
+//experimental, doesn't work, it's supposed to switch the html of the button, don't worry about this
+chrome.runtime.onMessage.addListener(function(request) {
+    if (request.message == "blocklisted") {
+        alert("blocklisted")
+    }
+    else if(request.message == "fine"){
+        alert("fine")
+    }
+    alert("received")
+})
 
 document.addEventListener('DOMContentLoaded', function () {
-
   document.querySelector('.addURLbutton').addEventListener('click', onclick, false)
-
   function onclick () {
       chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
             chrome.tabs.sendMessage(tabs[0].id, {message: "updateURL"})
@@ -20,20 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-
     document.querySelector('.showBlacklist').addEventListener('click', onclick, false)
-
     function onclick () {
         window.location.href="blacklist.html"
     }
-
 }, false)
 
 
 document.addEventListener('DOMContentLoaded', function () {
-
     document.querySelector('.reset').addEventListener('click', onclick, false)
-
     function onclick () {
         chrome.storage.sync.get(['blacklist'], function(result){
             const list = [];
@@ -46,9 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false)
 
 document.addEventListener('DOMContentLoaded', function () {
-
     document.querySelector('.website').addEventListener('click', onclick, false)
-
     function onclick () {
         var newURL = "http://127.0.0.1:5000/";
         chrome.tabs.create({ url: newURL });

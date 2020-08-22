@@ -1,10 +1,3 @@
-chrome.storage.sync.get(['blacklist'], function(result){
-    if(result.blacklist.includes(window.location.origin)){
-        alert("Blacklisted Website! Bad!")
-        alert("Your blacklisted websites are:\n" + result.blacklist.join("\n"))
-    }
-})
-
 chrome.runtime.onMessage.addListener(function(request) {
     if(request.message == "updateURL") {
         chrome.storage.sync.get(['blacklist'], function (result) {
