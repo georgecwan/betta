@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener(function(request) {
         newList.push(window.location.origin)
         chrome.storage.sync.set({'blacklist': newList}, function(){
             alert(window.location.origin + " added to blacklist.")
-            alert("Blacklist is now " + newList)
+            alert("Blacklist is now " + newList.join(", "))
         })
     })
 })
