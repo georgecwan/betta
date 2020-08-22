@@ -26,9 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function onclick () {
         chrome.storage.sync.get(['blacklist'], function(result){
-            alert(result.blacklist.join(", "))
+            alert(result.blacklist.join("\n"))
         })
-
     }
 }, false)
 
