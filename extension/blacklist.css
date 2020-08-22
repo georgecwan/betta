@@ -1,6 +1,8 @@
 html {
     min-width: 250px;
-    margin: 5px
+    width: 100%;
+    margin: auto;
+    padding: 5px 5px 15px 5px;
 }
 
 header {
@@ -8,23 +10,20 @@ header {
     padding-bottom: 5px;
 }
 
-body {
-    margin-bottom: 5px;
-}
-
 #sitelist {
     width: 100%;
     white-space: nowrap;
-    overflow-x: auto;
 }
 
 #sitelist > .link {
     font-size: 14px;
+    clear: right;
 }
 
 .material-icons {
     color: black;
     cursor: pointer;
+    float: right;
 }
 
 .material-icons:hover {
