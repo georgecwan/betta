@@ -17,13 +17,14 @@
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 32px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #ffffff;
   display: block;
   transition: 0.3s;
   font-family: 'Exo', sans-serif;
+  text-align: right;
 }
 
 /* When you mouse over the navigation links, change their color */
