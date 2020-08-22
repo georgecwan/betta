@@ -4,6 +4,12 @@
   "description": "Take care of your own betta fish by being productive!",
   "permissions": ["storage"],
   "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
