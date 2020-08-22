@@ -2,7 +2,7 @@
   "name": "Betta",
   "version": "1.0",
   "description": "Take care of your own betta fish by being productive!",
-  "permissions": ["storage"],
+  "permissions": ["storage", "tabs"],
   "manifest_version": 2,
   "content_scripts": [
     {

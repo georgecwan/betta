@@ -45,3 +45,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 }, false)
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    document.querySelector('.website').addEventListener('click', onclick, false)
+
+    function onclick () {
+        var newURL = "http://127.0.0.1:5000/";
+        chrome.tabs.create({ url: newURL });
+    }
+}, false)
