@@ -12,9 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.addURLbutton').addEventListener('click', onclick, false)
 
   function onclick () {
-      console.log("epic")
       chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
-            chrome.tabs.sendMessage(tabs[0].id, {message: "hello"})
+            chrome.tabs.sendMessage(tabs[0].id, {message: "updateURL"})
       })
   }
 }, false)
@@ -25,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.showBlacklist').addEventListener('click', onclick, false)
 
     function onclick () {
-        chrome.storage.sync.get(['blacklist'], function(result){
-            alert(result.blacklist.join("\n"))
+        chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+            chrome.tabs.sendMessage(tabs[0].id, {message: "showBlacklist"})
         })
     }
 }, false)
@@ -37,11 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.reset').addEventListener('click', onclick, false)
 
     function onclick () {
-        chrome.storage.sync.get(['blacklist'], function(result){
-            const list = [];
-            chrome.storage.sync.set({'blacklist': list})
-            alert("Blacklist cleared.")
+        chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+            chrome.tabs.sendMessage(tabs[0].id, {message: "clearBlacklist"})
         })
+        var x = document.getElementById("snackbar")
+        x.className = "show"
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000)
     }
 }, false)
 
