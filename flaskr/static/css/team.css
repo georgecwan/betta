@@ -40,12 +40,8 @@ body{
     width: 100%;
     margin: auto;
     color: #545454;
-}
-
-.name{
-    display: inline-flex;
     text-align: center;
     font-size: 25px;
-    color: #545454;
 }
+
 
