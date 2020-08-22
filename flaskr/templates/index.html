@@ -9,28 +9,40 @@
 </head>
 
 <header>
-    <!-- logo image -->
-    <img class="logo" src="../static/betta%20logo.png" alt="betta logo">
-    <!-- page header -->
-    <h1>Betta</h1>
-    <!-- hamburger menu button -->
-    <button class="hamburger hamburger--spin" type="button" onclick="clickHamburger()">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <!-- side navbar -->
-    <div id="mySidenav" class="sidenav">
-      <br>
-      <a href="../">Home</a>
-      <a href="about">About</a>
-      <a href="#">...</a>
-      <a href="#">...</a>
+    <div id="navbar">
+        <!-- logo image -->
+        <img class="logo" src="../static/betta%20logo.png" alt="betta logo">
+        <!-- page header -->
+        <h1>Betta</h1>
+        <!-- hamburger menu button -->
+        <button class="hamburger hamburger--spin" type="button" onclick="clickHamburger()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <!-- side navbar -->
+        <div id="mySidenav" class="sidenav">
+          <br>
+          <a href="../">Home</a>
+          <a href="about">About</a>
+          <a href="#">...</a>
+          <a href="#">...</a>
+        </div>
     </div>
 
 </header>
 
 <body>
+
+    <div class="parallax"></div>
+
+    <div style="height:1000px;background-color:#144456;font-size:36px">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+
+    <div class="parallax"></div>
 
 </body>
 </html>

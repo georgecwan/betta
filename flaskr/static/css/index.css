@@ -141,6 +141,11 @@ body {
   background-color: #072a41;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 button:focus {
   outline: 0;
 }
@@ -160,4 +165,31 @@ h1 {
   left: 60px;
   padding: 15px 10px;
   margin: 0;
+}
+
+/* navbar css starts here */
+
+#navbar {
+  background-color: #072a41; /* background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  height: 65px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* parallax scrolling effect */
+
+.parallax {
+  /* The image used */
+  background-image: url('https://wallpaperaccess.com/full/1090533.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
