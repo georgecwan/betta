@@ -225,10 +225,11 @@ h1 {
   white-space: nowrap;
 }
 
-#arrow a {
+#arrow01 a, #arrow02 a {
   padding-top: 60px;
 }
-#arrow a span {
+
+#arrow01 a span {
   position: absolute;
   bottom: 80px;
   left: 50%;
@@ -243,6 +244,23 @@ h1 {
   animation: sdb04 2s infinite;
   box-sizing: border-box;
 }
+
+#arrow02 a span {
+  position: absolute;
+  bottom: calc(-100% + 80px);
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 2px solid #082a42;
+  border-bottom: 2px solid #082a42;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+
 @-webkit-keyframes sdb04 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
