@@ -1,0 +1,11 @@
+{
+  "name": "Betta",
+  "version": "1.0",
+  "description": "Take care of your own betta fish by being productive!",
+  "permissions": ["storage"],
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
