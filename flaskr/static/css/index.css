@@ -372,3 +372,40 @@ h1 {
   margin-left: calc(30% - 300px);
   height: 90%;
 }
+
+/* Team Start Here */
+.team-section{
+    margin-top: 25px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+.team-section h1{
+    position: relative;
+    color: #082a42;
+    font-size: 45px;
+    margin-bottom: 0;
+    top: 5%;
+}
+.ps{
+    margin-bottom: 5px;
+    display: inline-flex;
+    background-color: rgba(8, 27, 34, 0.6);
+    border-radius: 10px;
+    padding: 60px;
+}
+.ps img{
+    height:200px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.section{
+    width: 100%;
+    margin: auto;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Exo', sans-serif;
+}
+
