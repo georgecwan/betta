@@ -27,5 +27,7 @@ chrome.runtime.onMessage.addListener(function(request) {
                 })
             })
             break;
+        case "sendDeleteMessage":
+            alert("Removed website from blacklist successfully.")
     }
 })

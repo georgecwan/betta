@@ -48,3 +48,10 @@ body {
 .material-icons:hover {
     color: red;
 }
+
+.trash {
+    background-color:transparent;
+    border: transparent;
+    outline: transparent;
+    margin:0;
+}
