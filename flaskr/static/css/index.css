@@ -339,7 +339,7 @@ h1 {
     width: 40%;
     min-height: 40%;
     float: right;
-    background-color: #cae6f6;
+    background-color: rgba(202, 230, 246, 0.6);
     padding: 50px;
     margin-right: calc(30% - 300px);
     border-radius: 3%;
@@ -350,7 +350,7 @@ h1 {
 .inner-container h1 {
     font-size: 45px;
     font-weight:900;
-    color: #545454;
+    color: #072a41;
     position: relative;
     top: 25px;
 }
@@ -364,7 +364,7 @@ h1 {
 }
 .text {
     font-size: 25px;
-    color: #545454;
+    color: #072a41;
     text-align: justify;
     margin: 0;
     position: relative;
