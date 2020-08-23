@@ -71,3 +71,17 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.skillBarContainer {
+    width: 80%;
+    background-color: #ddd;
+}
+
+.fishHealth {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+    width: 90%;
+    background-color: #4CAF50;
+} /* Green */

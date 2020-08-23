@@ -1,13 +1,12 @@
-//experimental, doesn't work, it's supposed to switch the html of the button, don't worry about this
-chrome.runtime.onMessage.addListener(function(request) {
-    if (request.message == "blocklisted") {
-        alert("blocklisted");
-    }
-    else if(request.message == "fine"){
-        alert("fine");
-    }
-    alert("received");
+var defaultHealth = 100
+chrome.storage.sync.get({fishHealth: defaultHealth}, function(result){
+    newWidth = String(result.fishHealth) + '%'
+    healthBar = document.getElementById('fishHealth')
+    healthBar.style.width = newWidth
+    healthBar.innerHTML = newWidth
+    chrome.storage.sync.set({fishHealth: result.fishHealth})
 })
+
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.ban-allow .ban').addEventListener('click', onclick, false);
