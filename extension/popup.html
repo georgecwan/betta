@@ -5,6 +5,7 @@
     <title>Popup</title>
     <link rel="stylesheet" href="popup.css"/>
     <link rel="stylesheet" href="snackbar.css"/>
+    <script src="popup.js" charset="utf-8"></script>
 </head>
 <body>
     <div class="header">
@@ -12,12 +13,16 @@
         <h1 class="betta">Betta</h1>
     </div>
     <div class="container">
-        <button class="addURLbutton">Blacklist URL</button>
-        <script src="popup.js" charset="utf-8"></script>
-        <button class="showBlacklist">Show Blacklist</button>
-        <button class="reset">Reset Blacklist</button>
-        <button class="website">About Us</button>
-        <div id="snackbar">Blacklist Reset!</div>
+        <div class="ban-allow">
+            <button class="ban">Ban URL</button>
+            <button class="allow">Allow URL</button>
+        </div>
+        <div class="other-buttons">
+            <button class="showBlacklist">Show Banned URLs</button>
+            <button class="reset">Clear Banned URLs</button>
+            <button class="website">Learn More</button>
+            <div id="snackbar">URL List Cleared!</div>
+        </div>
     </div>
 </body>
 </html>

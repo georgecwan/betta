@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
+.ban-allow {
+    display: inline-flex;
+    width: 90%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.other-buttons {
+    width: 105%;
+}
+
 .betta {
     text-align: center;
     font-family: 'Exo', sans-serif;
@@ -13,11 +26,12 @@
     align-content: center;
     align-items: center;
     display: block;
-    margin-left: calc(15% + 8px);
+    margin-left: 10%;
 }
 
 button {
-    width: 70%;
+    width: 80%;
+    left: 10%;
     background-color: #144456;
     border: none;
     color: white;
