@@ -53,8 +53,8 @@ button:hover {
 }
 
 body {
-    height: 400px;
-    width: 300px;
+    min-height: 400px;
+    min-width: 300px;
     background-color: #072a41;
     align-items: center;
     align-content: center;
@@ -70,18 +70,24 @@ body {
 .header {
     padding: 0;
     margin: 0;
+    align-content: center;
 }
 
 .skillBarContainer {
-    width: 80%;
-    background-color: #ddd;
+    min-width: 60%;
+    background-color: #214821;
+    position: relative;
+    margin: 8px;
+    border-radius: 25px;
 }
 
 .fishHealth {
     text-align: right; /* Right-align text */
     padding-top: 10px; /* Add top padding */
     padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
+    padding-right: 5px;
+    color: #ffffff; /* White text color */
+    border-radius: 25px;
     width: 90%;
-    background-color: #4CAF50;
-} /* Green */
+    background-color: #4CAF50; /* Green */
+}

@@ -1,12 +1,11 @@
-var defaultHealth = 100
+const defaultHealth = 100;
 chrome.storage.sync.get({fishHealth: defaultHealth}, function(result){
-    newWidth = String(result.fishHealth) + '%'
-    healthBar = document.getElementById('fishHealth')
+    let newWidth = String(result.fishHealth) + '%'
+    let healthBar = document.getElementById('fishHealth')
     healthBar.style.width = newWidth
     healthBar.innerHTML = newWidth
     chrome.storage.sync.set({fishHealth: result.fishHealth})
 })
-
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.ban-allow .ban').addEventListener('click', onclick, false);
