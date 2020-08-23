@@ -1,23 +1,59 @@
-p {
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 .betta {
-    margin-top: 0;
-    font-size: 20px;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.container {
+    align-content: center;
+    align-items: center;
+    display: block;
+    margin-left: calc(15% + 8px);
 }
 
 button {
-    width: 100%;
-    background-color: #377ba8;
+    width: 70%;
+    background-color: #144456;
     border: none;
     color: white;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 8px;
     border-radius: 8px;
+    font-family: 'Exo', sans-serif;
 }
 
+button:focus {
+    outline: none;
+}
 
+button:hover {
+    background-color: #0f8186;
+}
+
+body {
+    height: 400px;
+    width: 300px;
+    background-color: #072a41;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    position: relative;
+    left: calc(50% - 64px);
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+}

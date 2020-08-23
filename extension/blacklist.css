@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
 html {
-    min-width: 250px;
+    min-width: 300px;
+    min-height: 200px;
+    overflow: scroll;
     width: 100%;
     margin: auto;
-    padding: 5px 5px 15px 5px;
+    padding: 20px;
 }
 
-header {
-    font-size: 18px;
-    padding-bottom: 5px;
+body {
+    background-color: #072a41;
+}
+
+.text {
+    font-size: 14px;
+    color: white;
+    font-family: 'Exo', sans-serif;
+}
+
+.heading {
+    font-size: 20px;
+    color: white;
+    font-family: 'Exo', sans-serif;
 }
 
 #sitelist {
@@ -15,15 +30,19 @@ header {
     white-space: nowrap;
 }
 
-#sitelist > .link {
+.link {
     font-size: 14px;
+    margin: auto;
     clear: right;
+    padding: 5px;
+    display: flex;
 }
 
 .material-icons {
-    color: black;
+    color: #ffffff;
     cursor: pointer;
-    float: right;
+    float: left;
+    margin-right: 8px;
 }
 
 .material-icons:hover {
