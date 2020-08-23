@@ -3,7 +3,8 @@ function showBlacklist() {
         if (result.blacklist.length > 0) {
             for (var link in result.blacklist) {
                 document.getElementById('sitelist').innerHTML += '<div class="link">'
-                    + '<i class="material-icons w3-large">delete</i>' +result.blacklist[link] + '</div>';
+                    + '<button class="trash" style="background-color:transparent; border: transparent; outline: transparent; margin:0;">' +
+                    '<i class="material-icons w3-large">delete</i></button>' +result.blacklist[link] + '</div>';
             }
         }
         else {
