@@ -409,3 +409,26 @@ h1 {
     font-family: 'Exo', sans-serif;
 }
 
+/* install button */
+.install {
+  background-color: #072a41;
+  font-family: 'Exo', sans-serif;
+  font-size: 24px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  color: #cae6f6;
+  text-align: center;
+  border: none;
+  width: 200px;
+  border-radius: 25px;
+}
+
+.install:hover {
+  background-color: #144456;
+  color: white;
+}
+
+.install:focus {
+  outline: none;
+}
