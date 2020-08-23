@@ -9,16 +9,23 @@ chrome.runtime.onMessage.addListener(function(request) {
                     alert(webPage + " added to blacklist.");
                 })
             }
-            else {
-                for(var i=0; i<newList.length; i++) {
-                    if(newList[i] == webPage){
+
+        })
+    }
+    else switch (request.message) {
+        case "deleteURL":
+            chrome.storage.sync.get(['blacklist'], function (result) {
+                const newList = result.blacklist;
+                let webPage = window.location.origin;
+                for (var i = 0; i < newList.length; i++) {
+                    if (newList[i] == webPage) {
                         newList.splice(i, 1);
                     }
                 }
                 chrome.storage.sync.set({'blacklist': newList}, function () {
                     alert(webPage + " removed from blacklist.");
                 })
-            }
-        })
+            })
+            break;
     }
 })

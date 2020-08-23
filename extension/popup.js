@@ -10,19 +10,20 @@ chrome.runtime.onMessage.addListener(function(request) {
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.ban').addEventListener('click', onclick, false);
-  document.querySelector('.allow').addEventListener('click', onclick, true);
+  document.querySelector('.ban-allow .ban').addEventListener('click', onclick, false);
   function onclick() {
       chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
             chrome.tabs.sendMessage(tabs[0].id, {message: "updateURL"});
       })
-      // let toggleButton = document.querySelector(".addURLbutton");
-      // if (toggleButton.innerHTML == "Ban This URL") {
-      //     toggleButton.innerHTML = "Allow This URL";
-      // }
-      // else {
-      //     toggleButton.innerHTML = "Ban This URL";
-      // }
+  }
+}, false)
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.ban-allow .allow').addEventListener('click', onclick, false);
+  function onclick() {
+      chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+            chrome.tabs.sendMessage(tabs[0].id, {message: "deleteURL"});
+      })
   }
 }, false)
 
